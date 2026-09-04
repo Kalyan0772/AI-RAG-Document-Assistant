@@ -1,0 +1,433 @@
+/* =========================================================
+   DOCUMIND AI
+   Professional Enterprise UI
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body,
+[class*="css"] {
+    font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+
+/* Main application background */
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 20% 0%,
+            rgba(70, 80, 150, 0.16),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 100% 20%,
+            rgba(30, 90, 150, 0.10),
+            transparent 30%
+        ),
+        #070b16;
+}
+
+
+/* Main content width */
+
+.block-container {
+    max-width: 1380px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1 {
+    font-size: 2rem !important;
+    font-weight: 650 !important;
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    font-size: 1.45rem !important;
+    font-weight: 620 !important;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+}
+
+p,
+label,
+.stMarkdown,
+.stText,
+.stCaption {
+    font-size: 0.91rem;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: #090e1b;
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 1.5rem;
+}
+
+
+/* Sidebar text */
+
+section[data-testid="stSidebar"] p {
+    font-size: 0.88rem;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.stButton > button {
+    border-radius: 8px;
+    min-height: 40px;
+
+    padding: 0.45rem 0.9rem;
+
+    font-size: 0.88rem;
+    font-weight: 550;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    background: #111827;
+
+    color: #e8edf7;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+.stButton > button:hover {
+    background: #172033;
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
+}
+
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+
+/* Primary button */
+
+.stButton > button[kind="primary"] {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+
+.stButton > button[kind="primary"]:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+
+/* =========================================================
+   FILE UPLOADER
+   ========================================================= */
+
+[data-testid="stFileUploader"] {
+    background: rgba(15, 23, 42, 0.65);
+    border: 1px dashed rgba(148, 163, 184, 0.25);
+    border-radius: 12px;
+    padding: 0.8rem;
+}
+
+
+[data-testid="stFileUploader"]:hover {
+    border-color: rgba(96, 165, 250, 0.45);
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input,
+.stSelectbox div[data-baseweb="select"] {
+    background: #0d1424 !important;
+
+    border: 1px solid rgba(148, 163, 184, 0.18) !important;
+
+    border-radius: 8px !important;
+
+    color: #e5e7eb !important;
+
+    font-size: 0.9rem !important;
+}
+
+
+.stTextInput input:focus,
+.stTextArea textarea:focus,
+.stNumberInput input:focus {
+    border-color: rgba(96, 165, 250, 0.65) !important;
+
+    box-shadow:
+        0 0 0 1px rgba(96, 165, 250, 0.25) !important;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+[data-testid="stMetric"] {
+    background: rgba(15, 23, 42, 0.72);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 10px;
+
+    padding: 1rem;
+}
+
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.78rem !important;
+    color: #94a3b8 !important;
+}
+
+
+[data-testid="stMetricValue"] {
+    font-size: 1.55rem !important;
+    font-weight: 650 !important;
+}
+
+
+/* =========================================================
+   EXPANDERS
+   ========================================================= */
+
+[data-testid="stExpander"] {
+    background: rgba(15, 23, 42, 0.55);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   CHAT
+   ========================================================= */
+
+[data-testid="stChatMessage"] {
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+
+    padding: 0.8rem 1rem;
+
+    margin-bottom: 0.7rem;
+
+    background: rgba(15, 23, 42, 0.55);
+}
+
+
+/* User message */
+
+[data-testid="stChatMessage"]:has(
+    [data-testid="chatAvatarIcon-user"]
+) {
+    background: rgba(30, 41, 59, 0.58);
+}
+
+
+/* Assistant message */
+
+[data-testid="stChatMessage"]:has(
+    [data-testid="chatAvatarIcon-assistant"]
+) {
+    background: rgba(15, 23, 42, 0.68);
+}
+
+
+/* =========================================================
+   CUSTOM CARDS
+   ========================================================= */
+
+.card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17, 24, 39, 0.94),
+            rgba(10, 15, 28, 0.94)
+        );
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+
+    padding: 1.1rem;
+
+    margin-bottom: 1rem;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+
+.card-title {
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    color: #e5e7eb;
+
+    margin-bottom: 0.35rem;
+}
+
+
+.card-subtitle {
+    font-size: 0.8rem;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status-success {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 0.28rem 0.55rem;
+
+    border-radius: 999px;
+
+    background: rgba(34, 197, 94, 0.10);
+
+    border:
+        1px solid rgba(34, 197, 94, 0.20);
+
+    color: #86efac;
+
+    font-size: 0.76rem;
+
+    font-weight: 550;
+}
+
+
+.status-warning {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 0.28rem 0.55rem;
+
+    border-radius: 999px;
+
+    background: rgba(234, 179, 8, 0.10);
+
+    border:
+        1px solid rgba(234, 179, 8, 0.20);
+
+    color: #fde68a;
+
+    font-size: 0.76rem;
+
+    font-weight: 550;
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
+hr {
+    border-color:
+        rgba(255, 255, 255, 0.07) !important;
+}
+
+
+/* =========================================================
+   DATA TABLE
+   ========================================================= */
+
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+[data-testid="stAlert"] {
+    border-radius: 9px;
+
+    font-size: 0.86rem;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #080c16;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #263248;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #34445f;
+}

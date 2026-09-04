@@ -1,0 +1,16 @@
+[theme]
+base = "dark"
+primaryColor = "#2563eb"
+backgroundColor = "#070b16"
+secondaryBackgroundColor = "#0d1424"
+textColor = "#e5e7eb"
+font = "sans-serif"
+headingFont = "sans-serif"
+baseFontSize = 15
+baseFontWeight = 400
+headingFontWeights = 600
+showWidgetBorder = true
+showSidebarBorder = true
+
+[browser]
+gatherUsageStats = false
