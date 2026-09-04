@@ -300,6 +300,17 @@ if page == "Dashboard":
 
     if uploaded_files:
 
+        upload_dir = (
+            ROOT_DIR
+            / "data"
+            / "uploads"
+        )
+
+        upload_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
         st.markdown(
             "### Selected Documents"
         )
